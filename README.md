@@ -90,7 +90,7 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use and 
 
 If you encounter any issues or have suggestions, please report them in the [issue tracker](https://github.com/ayushsoni1010/inklink/issues).
 
-## Tech Stack Used 🛠️
+## Tech Stack Used 💅
 
 - Next.js
 - Supabase
