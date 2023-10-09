@@ -32,7 +32,7 @@ Join us in shaping the future of inkLink and let's make waves together in the op
 - [Tech Stack Used](#tech-stack-used-)
 - [Acknowledgments](#acknowledgments-)
 - [Learn More](#learn-more-)
-- [Deploy Vercel](#deploy-vercel-)
+- [Deploy on Vercel](#deploy-on-vercel-)
 
 ## Introduction 📝
 
