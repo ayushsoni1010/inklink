@@ -3,6 +3,7 @@
 import React from "react";
 import { BaseButtonProps } from "@/interfaces/base/button";
 import { Slot } from "@radix-ui/react-slot";
+import { cn } from "@/lib/utils";
 
 const BaseButtonStyles =
   "inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
@@ -29,10 +30,19 @@ const BaseButtonSizeStyles = {
 
 const BaseButton = React.forwardRef<HTMLButtonElement, BaseButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const allClassName = `${BaseButtonStyles} ${BaseButtonVariantStyles[variant]} ${BaseButtonSizeStyles[size]}`;
     const Component = asChild ? Slot : "button";
 
-    return <Component className={allClassName} ref={ref} {...props} />;
+    return (
+      <Component
+        className={cn(
+          BaseButtonStyles,
+          BaseButtonVariantStyles[variant],
+          BaseButtonSizeStyles[size]
+        )}
+        ref={ref}
+        {...props}
+      />
+    );
   }
 );
 
