@@ -1,60 +1,41 @@
+"use-client";
+
+import React from "react";
 import { BaseButtonProps } from "@/interfaces/base/button";
+import { Slot } from "@radix-ui/react-slot";
 
-const BaseButtonStyles = "text-center rounded-md font-semibold";
+const BaseButtonStyles =
+  "inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
 
-// `'primary', 'secondary', 'tertiary', 'link'`
+// `'primary', 'secondary', 'outline', 'destructive', 'ghost', 'link'`
 
 const BaseButtonVariantStyles = {
-  primary:
-    "bg-blue-600 hover:bg-blue-700 focus:bg-blue-600 disabled:bg-blue-200 text-white hover:text-white focus:text-white disabled:text-white ring-1 ring-blue-600 hover:ring-blue-700 focus:ring-blue-600 disabled:ring-blue-200",
-  secondary:
-    "bg-white hover:bg-gray-50 focus:bg-white disabled:bg-white text-gray-700 hover:text-gray-800 focus:text-gray-700 disabled:text-gray-300 ring-1 ring-gray-300 hover:ring-gray-300 focus:ring-gray-300 disabled:ring-gray-200",
-  tertiary:
-    "bg-transparent hover:bg-blue-50 focus:bg-transparent disabled:bg-transparent text-blue-700 hover:text-blue-700 focus:text-blue-700 disabled:text-gray-300 ring-1 ring-gray-300 hover:ring-gray-300 focus:ring-gray-300 disabled:ring-gray-200",
-  link: "text-blue-700 hover:text-blue-800 focus:text-blue-700 disabled:text-gray-300",
+  primary: "bg-primary text-primary-foreground hover:bg-primary/90",
+  secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/800",
+  outline:
+    "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+  destructive:
+    "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+  ghost: "hover:bg-accent hover:text-accent-foreground",
+  link: "text-primary underline-offset-4 hover:underline",
 };
 
 const BaseButtonSizeStyles = {
-  small: "px-6 py-2.5 text-sm shadow-sm",
-  medium: "px-6 py-3 text-md shadow-sm",
-  large: "px-6 py-4 text-lg shadow-sm",
+  small: "h-9 rounded-md px-3",
+  medium: "h-10 px-4 py-2",
+  large: "h-11 rounded-md px-8",
+  icon: "h-10 w-10",
 };
 
-const BaseButtonLinkSizeStyles = {
-  small: "text-sm",
-  medium: "text-md",
-  large: "text-lg",
-};
+const BaseButton = React.forwardRef<HTMLButtonElement, BaseButtonProps>(
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    const allClassName = `${BaseButtonStyles} ${BaseButtonVariantStyles[variant]} ${BaseButtonSizeStyles[size]}`;
+    const Component = asChild ? Slot : "button";
 
-const BaseButton: React.FunctionComponent<BaseButtonProps> = ({
-  variant = "primary",
-  size = "medium",
-  type = "button",
-  disabled = false,
-  ...props
-}) => {
-  const allClassName = `${BaseButtonStyles} ${
-    BaseButtonVariantStyles[variant]
-  } ${
-    variant === "link"
-      ? BaseButtonLinkSizeStyles[size]
-      : BaseButtonSizeStyles[size]
-  } ${props?.class}`;
+    return <Component className={allClassName} ref={ref} {...props} />;
+  }
+);
 
-  return (
-    <>
-      <button
-        type={type}
-        className={allClassName}
-        style={props?.style}
-        disabled={disabled}
-        {...props}
-      >
-        {props?.children}
-        {props.value}
-      </button>
-    </>
-  );
-};
+BaseButton.displayName = "Button";
 
 export { BaseButton };
