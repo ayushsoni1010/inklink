@@ -9,13 +9,19 @@ type BaseButton = {
    * as well as "outline" versions (prefixed by 'outline-*')
    * `'outline-primary', 'outline-secondary', 'outline-success', 'outline-danger', 'outline-warning', 'outline-info'`
    */
-  variant: "primary" | "secondary" | "tertiary" | "link";
+  variant:
+    | "primary"
+    | "secondary"
+    | "outline"
+    | "destructive"
+    | "ghost"
+    | "link";
   /**
    * Defines HTML button size.
    *
    * @default 'medium'
    */
-  size: "small" | "medium" | "large";
+  size: "small" | "medium" | "large" | "icon";
   /**
    * Defines HTML button type attribute.
    *
@@ -29,8 +35,6 @@ export interface BaseButtonProps
   variant: BaseButton["variant"];
   size: BaseButton["size"];
   type?: BaseButton["type"];
-  class?: string;
-  value?: string;
-  disabled?: boolean;
+  asChild?: boolean;
   children?: React.ReactNode | any;
 }
