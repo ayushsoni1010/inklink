@@ -7,13 +7,10 @@ const supabaseApiKey: any = process.env.NEXT_PUBLIC_SUPABASE_API_KEY;
 
 const supabase = createClient(supabaseURL, supabaseApiKey);
 
-const logInWithMagicLinkViaEmail = async ({ ...props }) => {
+const logInWithMagicLinkViaEmail = async (email: string) => {
   try {
-    if (props?.userEmail) {
-      throw new Error("Please enter valid email");
-    }
     let { data, error } = await supabase.auth.signInWithOtp({
-      email: props?.userEmail,
+      email: email,
     });
     if (error) {
       console.log(error);
