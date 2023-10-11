@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import React from "react";
 import { cn } from "@/lib/utils";
@@ -22,4 +22,4 @@ const BaseInput = React.forwardRef<HTMLInputElement, BaseInputProps>(
   }
 );
 
-export default BaseInput;
+export { BaseInput };

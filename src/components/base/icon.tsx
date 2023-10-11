@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import { BaseIconProps } from "@/interfaces/base/icon";
 
