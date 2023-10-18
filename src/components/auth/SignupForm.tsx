@@ -2,12 +2,12 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { BaseButton } from "@/components/base/button";
-import { BaseIcon } from "@/components/base/icon";
-import { BaseInput } from "@/components/base/input";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { BaseIcon } from "@/base/icon";
 import { helpers } from "@/helpers/helpers";
 import { SignUpDataType, SignUpErrorType } from "@/interfaces/ui/signup";
-import Link from "next/link";
 
 function SignupForm() {
   const router = useRouter();
@@ -144,68 +144,68 @@ function SignupForm() {
   };
   return (
     <>
-      <div className="space-y-4">
-        <div className="grid grid-cols-2 gap-6">
-          <BaseButton variant="outline" size="medium" type="button">
-            {loading ? (
-              <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
-            ) : (
-              <BaseIcon.google className="mr-2 h-4 w-4" />
-            )}{" "}
-            Google
-          </BaseButton>
-          <BaseButton variant="outline" size="medium" type="button">
-            {loading ? (
-              <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
-            ) : (
-              <BaseIcon.github className="mr-2 h-4 w-4" />
-            )}{" "}
-            GitHub
-          </BaseButton>
-        </div>
-        <div className="relative">
-          <div className="absolute inset-0 flex items-center">
-            <span className="w-full border-t" />
-          </div>
-          <div className="relative flex justify-center text-xs uppercase">
-            <span className="bg-background px-2 z-10 text-muted-foreground">
-              Or continue with
-            </span>
-          </div>
-        </div>
-        <form onSubmit={handleSignUpWithEmail} className="flex flex-col gap-2">
-          <div className="grid gap-2">
-            <p className="text-sm font-medium">Email</p>
-            <BaseInput
-              type="email"
-              placeholder="name@example.com"
-              value={data.email}
-              onChange={handleChangeEmail}
-            />
-            <p className="font-medium -mt-1 text-sm text-destructive">
-              {error.errorEmailMessage}
-            </p>
-          </div>
-          <div className="grid gap-2">
-            <p className="text-sm font-medium">Password</p>
-            <BaseInput
-              type="password"
-              placeholder="************"
-              value={data.password}
-              onChange={handleChangePassword}
-            />
-            <p className="font-medium -mt-1 text-sm text-destructive">
-              {error.errorPasswordMessage}
-            </p>
-          </div>
-          <BaseButton variant="primary" size="medium" type="submit">
-            {loading && (
-              <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
-            )}
-            Sign up
-          </BaseButton>
-        </form>
+      <div className="grid grid-cols-2 gap-6">
+        <Button variant="outline">
+          {loading ? (
+            <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
+          ) : (
+            <BaseIcon.google className="mr-2 h-4 w-4" />
+          )}{" "}
+          Google
+        </Button>
+        <Button variant="outline">
+          {loading ? (
+            <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
+          ) : (
+            <BaseIcon.github className="mr-2 h-4 w-4" />
+          )}{" "}
+          GitHub
+        </Button>
       </div>
+      <div className="relative">
+        <div className="absolute inset-0 flex items-center">
+          <span className="w-full border-t" />
+        </div>
+        <div className="relative flex justify-center text-xs uppercase">
+          <span className="bg-background px-2 text-muted-foreground">
+            Or continue with
+          </span>
+        </div>
+      </div>
+      <form onSubmit={handleSignUpWithEmail} className="grid gap-2">
+        <div className="grid gap-2">
+          <Label htmlFor="email">Email</Label>
+          <Input
+            type="email"
+            id="email"
+            placeholder="name@example.com"
+            value={data.email}
+            onChange={handleChangeEmail}
+          />
+          <p className="text-sm -mt-1 text-destructive">
+            {error.errorEmailMessage}
+          </p>
+        </div>
+        <div className="grid gap-2">
+          <Label htmlFor="password">Password</Label>
+          <Input
+            id="password"
+            type="password"
+            placeholder="************"
+            value={data.password}
+            onChange={handleChangePassword}
+          />
+          <p className="text-sm -mt-1 text-destructive">
+            {error.errorPasswordMessage}
+          </p>
+        </div>
+        <Button type="submit">
+          {loading && (
+            <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
+          )}
+          Sign up
+        </Button>
+      </form>
     </>
   );
 }
