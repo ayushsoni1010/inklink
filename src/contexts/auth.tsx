@@ -4,10 +4,13 @@ import { supabase } from "@/config/supabase";
 
 const AuthContext = createContext({});
 
-export const AuthContextProvider = ({ children }) => {
+export const AuthContextProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  const [user, setUser] = useState<any>(false);
   const onAuthStateChange = async () => {
-    const [user, setUser] = useState(false);
-
     try {
       const {
         data: { user },
@@ -20,6 +23,7 @@ export const AuthContextProvider = ({ children }) => {
     } finally {
     }
   };
+
   useEffect(() => {
     onAuthStateChange();
   }, []);
@@ -35,6 +39,6 @@ export const AuthContextProvider = ({ children }) => {
 };
 
 export const useAuthContext = () => {
-  const { user, signOut } = useContext(AuthContext);
+  const { user, signOut }: any = useContext(AuthContext);
   return { user, signOut };
 };

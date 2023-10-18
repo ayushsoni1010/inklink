@@ -22,7 +22,15 @@ const logInWithMagicLinkViaEmail = async (email: string) => {
   }
 };
 
-const SignUp = async ({ email, password, ...props }) => {
+const SignUp = async ({
+  email,
+  password,
+  ...props
+}: {
+  email: any;
+  password: any;
+  props: any;
+}) => {
   try {
     if (!email || !password) {
       throw new Error("");
