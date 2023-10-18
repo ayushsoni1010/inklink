@@ -1,15 +1,19 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import { cn } from "@/lib/utils";
+import { Inter as FontSans } from "next/font/google";
+
+export const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: "inkLink",
-  description:
-    "A blogging platform that connects writers with their audience through seamless content sharing.",
+  description: "Write Once, Share Everywhere!",
 };
 
 export default function RootLayout({
@@ -19,7 +23,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}
+      >
         <Theme>{children}</Theme>
       </body>
     </html>
