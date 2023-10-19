@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Tech%20Stack-Next.js%20%7C%20TailwindCSS%20%7C%20OpenAI%20%7C%20TypeScript%20%7C%20Supabase-0288d1.svg" alt="Tech Stack" />
+  <img src="https://img.shields.io/badge/Tech%20Stack-Next.js%20%7C%20TailwindCSS%20%7C%20OpenAI%20%7C%20TypeScript%20%7C%20Supabase%20%7C%20Shadcn-0288d1.svg" alt="Tech Stack" />
 </p>
 
 <p align="center">
