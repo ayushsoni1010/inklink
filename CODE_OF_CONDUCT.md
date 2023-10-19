@@ -23,7 +23,7 @@ We do not tolerate any form of harassment, discrimination, or disrespectful beha
 
 ## 📣 Reporting Incidents
 
-If you witness or experience any unacceptable behavior while contributing to inkLink, please report it immediately to the project maintainers at [ayushsoni1010.work@gmail.com]. All reports will be kept confidential and will be thoroughly reviewed and addressed.
+If you witness or experience any unacceptable behavior while contributing to inkLink, please report it immediately to the project maintainers at ayushsoni1010.work@gmail.com. All reports will be kept confidential and will be thoroughly reviewed and addressed.
 
 ## 🚧 Consequences
 
