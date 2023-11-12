@@ -87,7 +87,7 @@ const UserLoginForm = () => {
   return (
     <>
       <div className="grid grid-cols-2 gap-6">
-        <Button variant="outline">
+        <Button variant="outline" onClick={handleGoogleLogin}>
           {loading ? (
             <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
           ) : (
@@ -95,7 +95,7 @@ const UserLoginForm = () => {
           )}{" "}
           Google
         </Button>
-        <Button variant="outline">
+        <Button variant="outline" onClick={handleGithubLogin}>
           {loading ? (
             <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
           ) : (
