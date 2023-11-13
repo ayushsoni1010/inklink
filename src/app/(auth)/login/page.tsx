@@ -21,7 +21,7 @@ const Login = async () => {
   }
 
   return (
-    <div className="lg:p-10 flex items-center justify-center">
+    <div className="md:p-10 flex items-center justify-center">
       <Card className="w-[400px]">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl">Log in</CardTitle>
