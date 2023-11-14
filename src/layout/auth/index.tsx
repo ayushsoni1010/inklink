@@ -7,7 +7,7 @@ import TestimonialsSection from "./TestimonialSection";
 
 const AuthSidebarLayout: React.FunctionComponent = () => {
   return (
-    <div className="flex flex-col my-auto justify-center items-stretch mx-auto h-full w-full gap-12">
+    <div className="flex flex-col my-auto justify-center items-stretch mx-auto h-full w-full gap-12 max-w-5xl">
       <NotificationSection />
       <LayerSection />
       <TestimonialsSection />
