@@ -1,4 +1,4 @@
-<h1 align="center">inkLink ✍🏻</h1>
+<h1 align="center">inklink ✍🏻</h1>
 
 <p align="center">
   <b>Write Once, Share Everywhere!</b>
@@ -12,17 +12,18 @@
   <i>An AI-powered blogging platform that empowers writers to create captivating content effortlessly!</i>
 </p>
 
-
 ## Embrace the Hacktoberfest Spirit 🎉
-Ahoy, fellow adventurers of the digital realm! Welcome aboard the inkLink ship! We're absolutely thrilled that you've chosen to set sail with us on this exciting voyage, especially during the exhilarating Hacktoberfest.
 
-Be it a seasoned developer, a visionary designer, or an eager enthusiast, there's a treasure trove of opportunities for you to make your mark on inkLink's grand expedition. Your contributions, no matter how big or small, are the wind in our sails, propelling us towards excellence.
+Ahoy, fellow adventurers of the digital realm! Welcome aboard the inklink ship! We're absolutely thrilled that you've chosen to set sail with us on this exciting voyage, especially during the exhilarating Hacktoberfest.
+
+Be it a seasoned developer, a visionary designer, or an eager enthusiast, there's a treasure trove of opportunities for you to make your mark on inklink's grand expedition. Your contributions, no matter how big or small, are the wind in our sails, propelling us towards excellence.
 
 So, don your creative hats, wield your coding compass, and chart a course for innovation. As we navigate through the vast sea of possibilities, your insights, ideas, and expertise will be our guiding stars.
 
-Join us in shaping the future of inkLink and let's make waves together in the open-source community! 🌟
+Join us in shaping the future of inklink and let's make waves together in the open-source community! 🌟
 
 ## Table of Contents
+
 - [Introduction](#introduction-)
 - [Features](#features-)
 - [Getting Started](#getting-started-)
@@ -36,7 +37,7 @@ Join us in shaping the future of inkLink and let's make waves together in the op
 
 ## Introduction 📝
 
-Welcome to inkLink, a powerful blogging platform that connects writers with their audience through seamless content sharing. Craft captivating content with generative AI, prompt engineering, and an intuitive UI, and share it effortlessly on different blogging platforms.
+Welcome to inklink, a powerful blogging platform that connects writers with their audience through seamless content sharing. Craft captivating content with generative AI, prompt engineering, and an intuitive UI, and share it effortlessly on different blogging platforms.
 
 ## Features ✨
 
@@ -46,14 +47,17 @@ Welcome to inkLink, a powerful blogging platform that connects writers with thei
 - **Creative UI**: Enjoy an innovative and intuitive user interface.
 
 ## Getting Started 🚀
-To get started with inkLink, follow the installation and usage instructions in the project's documentation.
+
+To get started with inklink, follow the installation and usage instructions in the project's documentation.
 
 1. Clone the repository to your local machine:
+
 ```
 git clone https://github.com/ayushsoni1010/inklink.git
 ```
 
 2. Install the required dependencies:
+
 ```
 cd inklink
 npm install
@@ -62,6 +66,7 @@ npm install
 3. Configure the environment variables, including API keys and settings.
 
 4. First, run the development server:
+
 ```bash
 npm run dev
 # or
@@ -127,4 +132,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ---
 
-Happy blogging with **inkLink**! 🎉
+Happy blogging with **inklink**! 🎉

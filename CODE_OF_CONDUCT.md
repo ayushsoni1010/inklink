@@ -1,6 +1,6 @@
-# inkLink Code of Conduct
+# inklink Code of Conduct
 
-Welcome to inkLink! We are committed to providing a welcoming and inclusive environment for all contributors. To maintain a positive and respectful community, we have established this Code of Conduct that applies to everyone participating in our project.
+Welcome to inklink! We are committed to providing a welcoming and inclusive environment for all contributors. To maintain a positive and respectful community, we have established this Code of Conduct that applies to everyone participating in our project.
 
 ## 🤝 Our Pledge
 
@@ -23,7 +23,7 @@ We do not tolerate any form of harassment, discrimination, or disrespectful beha
 
 ## 📣 Reporting Incidents
 
-If you witness or experience any unacceptable behavior while contributing to inkLink, please report it immediately to the project maintainers at ayushsoni1010.work@gmail.com. All reports will be kept confidential and will be thoroughly reviewed and addressed.
+If you witness or experience any unacceptable behavior while contributing to inklink, please report it immediately to the project maintainers at ayushsoni1010.work@gmail.com. All reports will be kept confidential and will be thoroughly reviewed and addressed.
 
 ## 🚧 Consequences
 
@@ -34,9 +34,9 @@ Contributors who violate this Code of Conduct may face consequences, including b
 
 ## 👏 Acknowledgment
 
-We appreciate your commitment to upholding the inkLink Code of Conduct. Your positive contributions, respectful behavior, and dedication to creating a welcoming environment are crucial to our community's success.
+We appreciate your commitment to upholding the inklink Code of Conduct. Your positive contributions, respectful behavior, and dedication to creating a welcoming environment are crucial to our community's success.
 
-Thank you for your cooperation and for helping us make inkLink a safe and enjoyable place for all contributors.
+Thank you for your cooperation and for helping us make inklink a safe and enjoyable place for all contributors.
 
 ## 📜 License
 
@@ -44,4 +44,4 @@ This Code of Conduct is licensed under the [Contributor Covenant 2.0](https://ww
 
 ## 💙 Thank You
 
-We appreciate your contribution to the inkLink community. By following these guidelines, we can ensure a welcoming and inclusive environment for all. Together, we can make inkLink a better project for everyone.
+We appreciate your contribution to the inklink community. By following these guidelines, we can ensure a welcoming and inclusive environment for all. Together, we can make inklink a better project for everyone.

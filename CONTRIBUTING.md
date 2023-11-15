@@ -1,6 +1,6 @@
-# 🚀 Contributing to inkLink
+# 🚀 Contributing to inklink
 
-Welcome to InkLink, a creative project that thrives on community contributions. We appreciate your interest in making InkLink better!
+Welcome to inklink, a creative project that thrives on community contributions. We appreciate your interest in making inklink better!
 
 ## 🤝 How to Contribute
 
@@ -38,7 +38,7 @@ To set up the development environment, follow the instructions in the [README.md
 
 ## 🎉 Thank You
 
-We appreciate your support and contributions. Together, we can make InkLink a fantastic creative platform. Let's build something amazing!
+We appreciate your support and contributions. Together, we can make inklink a fantastic creative platform. Let's build something amazing!
 
 ## 📄 License
 
