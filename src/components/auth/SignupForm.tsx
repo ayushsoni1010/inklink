@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { BaseIcon } from "@/base/icon";
 import { helpers } from "@/helpers/helpers";
 import { SignUpDataType, SignUpErrorType } from "@/interfaces/ui/signup";
+import { Icon } from "@/components/ui/icon";
 
 function SignupForm() {
   const router = useRouter();
@@ -147,7 +148,7 @@ function SignupForm() {
       <div className="grid grid-cols-2 gap-6">
         <Button variant="outline">
           {loading ? (
-            <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
+            <Icon name="loader-2" className="mr-2 h-4 w-4 animate-spin" />
           ) : (
             <BaseIcon.google className="mr-2 h-4 w-4" />
           )}{" "}
@@ -155,9 +156,9 @@ function SignupForm() {
         </Button>
         <Button variant="outline">
           {loading ? (
-            <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
+            <Icon name="loader-2" className="mr-2 h-4 w-4 animate-spin" />
           ) : (
-            <BaseIcon.github className="mr-2 h-4 w-4" />
+            <Icon name="github" className="mr-2 h-4 w-4" />
           )}{" "}
           GitHub
         </Button>
@@ -201,7 +202,7 @@ function SignupForm() {
         </div>
         <Button type="submit">
           {loading && (
-            <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
+            <Icon name="loader-2" className="mr-2 h-4 w-4 animate-spin" />
           )}
           Sign up
         </Button>

@@ -7,6 +7,7 @@ import { signIn } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { Icon } from "@/components/ui/icon";
 import { BaseIcon } from "@/base/icon";
 import { SignUpDataType, SignUpErrorType } from "@/interfaces/ui/signup";
 
@@ -89,7 +90,7 @@ const UserLoginForm = () => {
       <div className="grid grid-cols-2 gap-6">
         <Button variant="outline" onClick={handleGoogleLogin}>
           {loading ? (
-            <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
+            <Icon name="loader-2" className="mr-2 h-4 w-4 animate-spin" />
           ) : (
             <BaseIcon.google className="mr-2 h-4 w-4" />
           )}{" "}
@@ -97,9 +98,9 @@ const UserLoginForm = () => {
         </Button>
         <Button variant="outline" onClick={handleGithubLogin}>
           {loading ? (
-            <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
+            <Icon name="loader-2" className="mr-2 h-4 w-4 animate-spin" />
           ) : (
-            <BaseIcon.github className="mr-2 h-4 w-4" />
+            <Icon name="github" className="mr-2 h-4 w-4" />
           )}{" "}
           GitHub
         </Button>
@@ -149,7 +150,7 @@ const UserLoginForm = () => {
         </Link>
         <Button type="submit">
           {loading && (
-            <BaseIcon.spinner className="mr-2 h-4 w-4 animate-spin" />
+            <Icon name="loader-2" className="mr-2 h-4 w-4 animate-spin" />
           )}
           Login
         </Button>
