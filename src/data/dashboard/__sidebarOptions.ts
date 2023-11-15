@@ -1,0 +1,58 @@
+export const sidebarOptions = [
+  {
+    index: 1,
+    title: "Home",
+    key: "home",
+    icon: "home",
+    link: "/dashboard/home",
+  },
+  {
+    index: 2,
+    title: "Integrations",
+    key: "integrations",
+    icon: "workflow",
+    link: "/dashboard/integrations",
+  },
+  {
+    index: 3,
+    title: "Drafts",
+    key: "drafts",
+    icon: "pen-square",
+    link: "/dashboard/drafts",
+  },
+  {
+    index: 4,
+    title: "Bookmarks",
+    key: "bookmarks",
+    icon: "bookmark",
+    link: "/dashboard/bookmarks",
+  },
+  {
+    index: 5,
+    title: "Analytics",
+    key: "analytics",
+    icon: "activity",
+    link: "/dashboard/analytics",
+  },
+  {
+    index: 6,
+    title: "Jobs",
+    key: "jobs",
+    icon: "briefcase",
+    link: "/dashboard/jobs",
+  },
+  {
+    index: 7,
+    title: "Notifications",
+    key: "notifications",
+    icon: "bell",
+    link: "/dashboard/notifications",
+  },
+  {
+    index: 8,
+    title: "Profile",
+    key: "profile",
+    icon: "user-circle",
+    link: "/dashboard/profile",
+  },
+];
