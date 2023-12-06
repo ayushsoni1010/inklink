@@ -13,7 +13,7 @@ const Sidebar: React.FunctionComponent = () => {
   const path = usePathname();
 
   return (
-    <nav className="flex w-60 bg-white h-screen p-6 fixed border-r">
+    <nav className="flex w-60 bg-white h-screen p-4 fixed border-r">
       <div className="flex flex-col justify-between w-full">
         <div className="flex flex-col gap-8">
           <Link href="/dashboard">
@@ -29,17 +29,17 @@ const Sidebar: React.FunctionComponent = () => {
                   href={navItem.link}
                   key={navItem.key}
                   className={cn(
-                    "px-4 py-3 rounded-md items-center w-full",
+                    "pl-4 h-11 rounded-md flex items-center justify-start w-full",
                     path === navItem.link
                       ? "bg-gray-100 shadow-sm border border-gray-200"
                       : "hover:bg-gray-100 hover:shadow-sm"
                   )}
                 >
-                  <li className="flex gap-3 justify-start items-center">
-                    <Icon name={navItem.icon} className="w-5 h-5" />
+                  <li className="flex gap-3 justify-start items-center my-auto w-full h-full">
+                    <Icon name={navItem.icon} className="w-6 h-6" />
                     <p
                       className={cn(
-                        "text-sm",
+                        "text-base hover:translate-x-1.5 transition w-full",
                         path === navItem.link
                           ? "text-gray-900 font-bold"
                           : "text-gray-700 font-medium"

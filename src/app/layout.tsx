@@ -12,7 +12,7 @@ export const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "inkLink",
+  title: "inklink",
   description: "Write Once, Share Everywhere!",
 };
 
