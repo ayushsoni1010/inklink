@@ -36,7 +36,8 @@ const Sidebar: React.FunctionComponent = () => {
                   )}
                 >
                   <li className="flex gap-3 justify-start items-center my-auto w-full h-full">
-                    <Icon name={navItem.icon} className="w-6 h-6" />
+                    {/* <Icon name={navItem.icon} className="w-6 h-6" /> */}
+                    <span>{navItem.icon}</span>
                     <p
                       className={cn(
                         "text-base hover:translate-x-1.5 transition w-full",
