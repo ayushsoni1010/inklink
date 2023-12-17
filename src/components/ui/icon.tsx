@@ -1,3 +1,5 @@
+"use client";
+
 import { memo } from "react";
 import dynamic from "next/dynamic";
 import { LucideProps } from "lucide-react";

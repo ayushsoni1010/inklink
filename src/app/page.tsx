@@ -1,10 +1,17 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import Header from "@/website/header";
+import HeroSection from "@/website/hero-section";
 
 export default function Home() {
   return (
     <>
-      <div className="grid gap-3 items-center justify-center h-screen">
-        <div className="text-center">
+      <div className="flex flex-col items-center justify-center w-full mx-auto">
+        <Header />
+        <HeroSection />
+        {/* <img src="/assets/grid.png" alt="" className="h-screen w-fu" /> */}
+        {/* <div className="text-center">
           {" "}
           <Button variant={"ghost"}>Website in progress 🚀</Button>
           <p className="text-sm mt-2 text-center">
@@ -18,7 +25,7 @@ export default function Home() {
             </a>{" "}
             pages
           </p>
-        </div>
+        </div> */}
       </div>
     </>
   );
