@@ -1,15 +1,16 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import Banner from "@/components/elements/banner";
 import Header from "@/website/header";
-import HeroSection from "@/website/hero-section";
+import Landing from "@/website/landing";
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full mx-auto">
+        <Banner />
         <Header />
-        <HeroSection />
+        <Landing />
         {/* <img src="/assets/grid.png" alt="" className="h-screen w-fu" /> */}
         {/* <div className="text-center">
           {" "}
